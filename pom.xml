@@ -1,0 +1,186 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>net.technearts</groupId>
+	<artifactId>javapom</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<!-- <parent></parent> -->
+	<!-- <modules> <module>test</module> </modules> -->
+	<name>javapom</name>
+	<description>A java pom generator</description>
+	<url>http://javapom.com</url>
+	<inceptionYear>2017</inceptionYear>
+	<!-- <prerequisites> <maven>3.0</maven> </prerequisites> -->
+	<contributors>
+		<contributor>
+			<name>Contributor</name>
+			<email>contributor@javapom.com</email>
+			<organization>Javapom</organization>
+			<organizationUrl>http://javapom.com</organizationUrl>
+			<url>http://javapom.com</url>
+			<roles>
+				<role>None</role>
+			</roles>
+			<timezone>GMT</timezone>
+			<properties>
+				<twitter>@contributor</twitter>
+			</properties>
+		</contributor>
+	</contributors>
+	<developers>
+		<developer>
+			<id>paulo</id>
+			<email>paulo.suderio@gmail.com</email>
+			<name>Paulo</name>
+			<organization>Technearts</organization>
+			<organizationUrl>http://www.technearts.net</organizationUrl>
+			<properties>
+				<twitter>paulo.suderio</twitter>
+			</properties>
+			<roles>
+				<role>All</role>
+			</roles>
+			<timezone>GMT-3</timezone>
+			<url>http://www.technearts.net</url>
+		</developer>
+	</developers>
+
+	<ciManagement>
+		<system>travis</system>
+		<url>http://travis.org</url>
+		<!-- <notifiers></notifiers> -->
+	</ciManagement>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>3.8.1</version>
+				<scope>test</scope>
+				<type>jar</type>
+				<optional>false</optional>
+				<!-- <exclusions></exclusions> -->
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+    <issueManagement>
+        <system>github</system>
+        <url>http://github.com</url>
+    </issueManagement>
+
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <distribution>repo</distribution>
+            <url>http://mit.org</url>
+            <comments>none</comments>
+        </license>
+    </licenses>
+
+    <organization>
+        <name>Technearts</name>
+        <url>http://technearts.net</url>
+    </organization>
+    
+    <mailingLists>
+        <mailingList>
+            <name>list</name>
+            <archive>http://maillistarchive.com</archive>
+            <otherArchives>
+                <otherArchive>http://othermaillistarchive.com</otherArchive>
+            </otherArchives>
+            <post>post@technearts.net</post>
+            <subscribe>subscribe@technearts.net</subscribe>
+            <unsubscribe>unsubscribe@technearts.net</unsubscribe>
+        </mailingList>
+    </mailingLists>
+
+    <scm>
+        <connection>http://github</connection>
+        <developerConnection>http://github</developerConnection>
+        <url>http://github</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+                    
+	<distributionManagement>
+		<downloadUrl>http://www.technearts.net</downloadUrl>
+		<repository>
+			<id>repo</id>
+			<layout>default</layout>
+			<name>repo</name>
+			<uniqueVersion>false</uniqueVersion>
+			<url>http://repo</url>
+		</repository>
+		<snapshotRepository>
+			<id>repo</id>
+			<layout>default</layout>
+			<name>repo</name>
+			<uniqueVersion>false</uniqueVersion>
+			<url>http://repo</url>
+		</snapshotRepository>
+		<site>
+			<id>repo</id>
+			<name>repo</name>
+			<url>http://repo</url>
+		</site>
+		<!-- <relocation></relocation> -->
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>repo</id>
+			<layout>default</layout>
+			<name>repo</name>
+			<url>http://repo</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repo</id>
+			<layout>default</layout>
+			<name>repo</name>
+			<url>http://repo</url>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>daily</updatePolicy>
+				<checksumPolicy>warn</checksumPolicy>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+</project>
